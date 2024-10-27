@@ -6,12 +6,65 @@
     <title>Weather App</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .search {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            padding: 5px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .search:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        .search input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 15px;
+            background: transparent;
+            font-size: 16px;
+            color: #ffffff;
+        }
+        .search input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .search button {
+            background: #387478;
+            border: none;
+            outline: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .search button:hover {
+            background: #387478;
+            transform: scale(1.05);
+        }
+        .search button svg {
+            width: 24px;
+            height: 24px;
+        }
+        .search button svg path {
+            stroke: #ffffff;
+        }
+    </style>
 </head>
 <body>
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter City Name" spellcheck="false">
-            <button><img src="assets/images/search.png" alt="Search"></button>
+            <button>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
         </div>
         <div class="weather">
             <img src="assets/images/rain.png" class="weather-icon" alt="Weather">
