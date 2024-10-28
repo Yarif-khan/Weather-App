@@ -1,4 +1,4 @@
-# [Weather App](yarif-khan.github.io/Weather-App/)
+# [Weather App](https://yarif-khan.github.io/Weather-App/)
 
 A minimalist weather application that allows users to get current weather information for any city worldwide. This app utilizes the OpenWeather API to fetch weather data and displays temperature, humidity, and wind speed in an interactive and visually appealing interface.
 
